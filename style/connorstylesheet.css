@@ -1,5 +1,5 @@
 /* Stylesheet created by Connor Vogelaar */
-/* layout for menu page*/
+/* layout for menu page */
 .content {
     display: grid;
     grid-template-columns: 500px minmax(0, 1fr);
@@ -28,7 +28,7 @@
     text-align: left;
 }
 
-/* pages heading */
+/* page heading */
 .page-heading {
     font-size: 32px;
     margin-bottom: 20px;
@@ -47,19 +47,37 @@
     padding-bottom: 10px;
 }
 
+/* item heading styling */
 .item-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+
+    padding: 12px 10px;
+    background-color: #e0d8d8;
+    border: 1px solid #C68A68;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-/* menu rows styling */
+.item-heading:hover {
+    background-color: #d4cbcb;
+    transform: translateX(4px);
+}
 
+.menu-section.open .item-heading {
+    background-color: #cfc7c7;
+}
+
+/* menu item rows hidden by default */
 .menu-section .menu-items {
     display: none;
 }
 
+/* shown when open */
 .menu-section.open .menu-items {
     display: flex;
     justify-content: space-between;
@@ -79,7 +97,7 @@
     min-width: 80px;
 }
 
-/* media for mobile devices */
+/* responsive layout */
 @media (max-width: 900px) {
     .content {
         grid-template-columns: 1fr;
