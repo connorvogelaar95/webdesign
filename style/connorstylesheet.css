@@ -19,7 +19,7 @@
     width: 500px;
 }
 
-/* Right-hand panel */
+/* right-hand panel */
 .main {
     background-color: #d1c9c9;
     padding: 80px 100px;
@@ -31,59 +31,52 @@
 /* page heading */
 .page-heading {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #8F2F09;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* intro list */
 .main ul {
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    padding-left: 20px;
 }
 
 /* menu sections */
 .menu-section {
-    margin-bottom: 45px;
-    padding-bottom: 10px;
+    margin-bottom: 50px;
 }
 
-/* item heading styling — STRONG SELECTOR FIXED */
-.menu-section .item-heading {
+.menu-section:not(:last-child) {
+    border-bottom: 2px solid #C68A68;
+    padding-bottom: 25px;
+}
+
+/* section titles */
+.item-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #674110;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    padding: 10px 0;
+    border-bottom: 2px dashed #b08a71;
+}
+
+/* menu item rows */
+.menu-items {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-
-    padding: 12px 10px;
-    background-color: #e0d8d8 !important;
-    border: 1px solid #C68A68 !important;
-    border-radius: 6px;
-    margin-bottom: 10px;
-
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.menu-section .item-heading:hover {
-    background-color: #d4cbcb !important;
-    transform: translateX(4px);
-}
-
-.menu-section.open .item-heading {
-    background-color: #cfc7c7 !important;
-}
-
-/* menu item rows hidden by default */
-.menu-section .menu-items {
-    display: none;
-}
-
-/* shown when open */
-.menu-section.open .menu-items {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 18px;
     border-bottom: 1px dashed #67411044;
+}
+
+.menu-items:last-child {
+    border-bottom: none;
 }
 
 .menu-items span:first-child {
@@ -93,8 +86,16 @@
 .menu-items span:last-child {
     font-weight: bold;
     color: #8F2F09;
-    text-align: right;
     min-width: 80px;
+    text-align: right;
+}
+
+/* hover effect for better polish */
+.menu-items:hover {
+    background-color: #e6e1e1;
+    border-radius: 3px;
+    padding-left: 6px;
+    transition: 0.2s;
 }
 
 /* responsive layout */
