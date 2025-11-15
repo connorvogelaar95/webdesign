@@ -47,29 +47,29 @@
     padding-bottom: 10px;
 }
 
-/* item heading styling */
-.item-heading {
+/* item heading styling — STRONG SELECTOR FIXED */
+.menu-section .item-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 
     padding: 12px 10px;
-    background-color: #e0d8d8;
-    border: 1px solid #C68A68;
+    background-color: #e0d8d8 !important;
+    border: 1px solid #C68A68 !important;
     border-radius: 6px;
     margin-bottom: 10px;
 
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.item-heading:hover {
-    background-color: #d4cbcb;
+.menu-section .item-heading:hover {
+    background-color: #d4cbcb !important;
     transform: translateX(4px);
 }
 
 .menu-section.open .item-heading {
-    background-color: #cfc7c7;
+    background-color: #cfc7c7 !important;
 }
 
 /* menu item rows hidden by default */
