@@ -46,7 +46,7 @@
 
 /* menu sections */
 .menu-section {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .menu-section:not(:last-child) {
@@ -61,8 +61,7 @@
     color: #674110;
     font-weight: bold;
     letter-spacing: 0.5px;
-
-    padding: 10px 0;
+    padding-bottom: 5px;
     border-bottom: 2px dashed #b08a71;
 }
 
@@ -90,7 +89,7 @@
     text-align: right;
 }
 
-/* hover effect for better polish */
+/* subtle hover effect */
 .menu-items:hover {
     background-color: #e6e1e1;
     border-radius: 3px;
