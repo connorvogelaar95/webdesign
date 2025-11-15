@@ -48,11 +48,10 @@
 }
 
 .item-heading {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #674110;
-    border-bottom: 2px solid #c68a68;
-    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 /* menu rows styling */
