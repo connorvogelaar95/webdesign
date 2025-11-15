@@ -1,15 +1,16 @@
-/*Stylesheet created by Connor Vogelaar*/
+/* Stylesheet created by Connor Vogelaar */
+/* layout for menu page*/
 .content {
     display: grid;
     grid-template-columns: 500px minmax(0, 1fr);
     width: min(1100px, 100%);
     margin: 0 auto;
     min-height: 100vh;
-    background-color: #C68A68;
+    background-color: #c68a68;
 }
 
 .navi {
-    background-color: #C68A68;
+    background-color: #c68a68;
     text-align: center;
     padding-bottom: 50px;
 }
@@ -50,11 +51,11 @@
     font-size: 22px;
     margin-bottom: 10px;
     color: #674110;
-    border-bottom: 2px solid #C68A68;
+    border-bottom: 2px solid #c68a68;
     padding-bottom: 5px;
 }
 
-/* menu rows display */
+/* menu rows styling */
 .menu-items {
     display: flex;
     justify-content: space-between;
