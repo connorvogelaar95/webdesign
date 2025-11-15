@@ -55,7 +55,12 @@
 }
 
 /* menu rows styling */
-.menu-items {
+
+.menu-section .menu-items {
+    display: none;
+}
+
+.menu-section.open .menu-items {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
@@ -72,14 +77,6 @@
     color: #8F2F09;
     text-align: right;
     min-width: 80px;
-}
-
-.menu-section .menu-items {
-    display: none;
-}
-
-.menu-section.open .menu-items {
-    display: flex;
 }
 
 /* media for mobile devices */
