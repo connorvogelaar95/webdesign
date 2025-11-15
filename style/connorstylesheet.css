@@ -89,12 +89,10 @@
     text-align: right;
 }
 
-/* hover effect for slight polish */
+/* hover effect */
 .menu-items:hover {
-    background-color: #e6e1e1;
-    border-radius: 3px;
-    padding-left: 6px;
-    transition: 0.2s;
+    background-color: #eae6e6;
+    transition: background-color 0.2s ease-in-out;
 }
 
 /* responsive layout */
