@@ -27,21 +27,20 @@
     text-align: left;
 }
 
-/* --- PAGE HEADING --- */
+/* pages heading */
 .page-heading {
     font-size: 32px;
     margin-bottom: 20px;
     color: #8F2F09;
 }
 
-/* Intro list */
-.menu-intro,
+/* intro list */
 .main ul {
     font-size: 16px;
     margin-bottom: 30px;
 }
 
-/* --- SECTIONS --- */
+/* menu sections */
 .menu-section {
     margin-bottom: 45px;
     padding-bottom: 10px;
@@ -55,7 +54,7 @@
     padding-bottom: 5px;
 }
 
-/* --- MENU ROWS: name | price --- */
+/* menu rows display */
 .menu-items {
     display: flex;
     justify-content: space-between;
@@ -75,7 +74,7 @@
     min-width: 80px;
 }
 
-/* --- MOBILE LAYOUT --- */
+/* media for mobile devices */
 @media (max-width: 900px) {
     .content {
         grid-template-columns: 1fr;
