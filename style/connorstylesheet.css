@@ -92,27 +92,31 @@
     opacity: 0.6;
 }
 
-/* mobile layout */
-@media (max-width: 900px) {
+/* mobile device layout */
+@media (max-width: 1100px) {
 
-    /* stack columns */
-    .content {
-        display: block;
+    /* Collapse layout into one column */
+    .navi, 
+    .main {
+        max-width: 100%;
     }
 
-    /* smaller logo */
+    /* Reduce right-panel padding */
+    .main {
+        padding: 40px 20px;
+    }
+
+    /* Resize logo */
     .navi img {
         width: 70%;
-        max-width: 260px;
-        margin: 20px auto;
+        max-width: 300px;
+        margin: 25px auto;
     }
+}
 
-    /* reduce padding */
-    .main {
-        padding: 30px 20px;
-    }
+@media (max-width: 700px) {
 
-    /* stack items */
+    /* Stack menu item text */
     .menu-items {
         flex-direction: column;
         align-items: flex-start;
