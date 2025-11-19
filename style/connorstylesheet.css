@@ -1,12 +1,12 @@
 /* Stylesheet created by Connor Vogelaar */
 /* Layout for menu page */
 .content {
-    display: grid;
-    grid-template-columns: 500px minmax(0, 1fr);
-    width: min(1100px, 100%);
-    margin: 0 auto;
-    min-height: 100vh;
-    background-color: #c68a68;
+  width: min(1100px, 100%);
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #C68A68;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 /* Left navigation panel */
