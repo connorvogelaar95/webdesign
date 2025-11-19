@@ -1,33 +1,38 @@
 /* Stylesheet created by Connor Vogelaar */
 /* Layout for menu page */
 .content {
-  width: min(1100px, 100%);
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #C68A68;
-  min-height: 100vh;
-  margin: 0 auto;
+    width: min(1100px, 100%);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #C68A68;
+    min-height: 100vh;
+    margin: 0 auto;
 }
 
 /* Left navigation panel */
 .navi {
-    background-color: #c68a68;
+    flex: 1 1 50%;
+    max-width: 500px;
     text-align: center;
+    background-color: #C68A68;
     padding-bottom: 50px;
 }
 
 .navi img {
     width: 500px;
+    max-width: 100%;
 }
 
 /* Right panel */
 .main {
+    flex: 1 1 400px;
     background-color: #d1c9c9;
     padding: 80px 100px;
     font-size: 16px;
     line-height: 1.6;
     text-align: left;
 }
+
 
 /* Page heading */
 .page-heading {
@@ -40,6 +45,7 @@
 .main ul {
     font-size: 16px;
     margin-bottom: 30px;
+    padding-left: 20px;
 }
 
 /* Menu sections */
@@ -55,13 +61,14 @@
     color: #674110;
     border-bottom: 2px solid #c68a68;
     padding-bottom: 5px;
+    font-weight: bold;
 }
 
 /* Menu items */
 .menu-items {
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 18px;
     border-bottom: 1px dashed #67411044;
 }
@@ -75,6 +82,14 @@
     color: #8F2F09;
     text-align: right;
     min-width: 80px;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10px;
+    opacity: 0.6;
 }
 
 /* mobile layout */
