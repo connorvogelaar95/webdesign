@@ -1,9 +1,7 @@
 /* Stylesheet created by Connor Vogelaar */
-/* Layout for menu page */
+@import url("style.css");
 /* Left navigation panel */
 .navi {
-    flex: 1 1 50%;
-    max-width: 500px;
     text-align: center;
     background-color: #C68A68;
     padding-bottom: 50px;
@@ -16,7 +14,6 @@
 
 /* Right panel */
 .main {
-    flex: 1 1 400px;
     background-color: #d1c9c9;
     padding: 80px 100px;
     font-size: 16px;
@@ -86,18 +83,12 @@
 /* mobile device layout */
 @media (max-width: 1100px) {
 
-    /* Collapse layout into one column */
-    .navi, 
-    .main {
-        max-width: 100%;
-    }
-
     /* Reduce right-panel padding */
     .main {
         padding: 40px 20px;
     }
 
-    /* Resize logo */
+/* Resize logo */
     .navi img {
         width: 70%;
         max-width: 300px;
