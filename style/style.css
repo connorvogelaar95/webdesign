@@ -66,15 +66,20 @@ a {
     color: #d1c9c9;
 }
 @media (max-width: 1100px) {
-  .content {
-    background-color: #C68A68;
-  }
-  .navi, .main {
-    max-width: 100%;
-    align-items: center;
-  }
-  .main {
-    padding-left:150px;
-    padding-right:150px;
-  }
+
+    .content .main {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Keep full-width stacking */
+    .content {
+        flex-direction: column;
+    }
+
+    .navi,
+    .main {
+        max-width: 100%;
+        width: 100%;
+    }
 }
