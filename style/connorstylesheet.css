@@ -1,19 +1,5 @@
 /* Stylesheet created by Connor Vogelaar */
 @import url("style.css");
-/* Left navigation panel */
-.navi img {
-    width: 500px;
-    max-width: 100%;
-}
-
-/* Right panel */
-.main {
-    background-color: #d1c9c9;
-    padding: 80px 100px;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
 /* Page heading */
 .page-heading {
     font-size: 32px;
