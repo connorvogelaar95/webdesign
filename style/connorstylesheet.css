@@ -22,7 +22,7 @@
 
 /* collapse all menu items by default */
 .menu-section:not(.open) .menu-items {
-    display: none;
+    display: none !important;
 }
 
 /* soups start open */
