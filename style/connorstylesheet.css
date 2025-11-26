@@ -68,11 +68,6 @@
     transition: 0.2s ease;
 }
 
-/* rotate / change symbol when section is open */
-.menu-section.open .toggle-icon {
-    content: "-";
-}
-
 /* footer */
 .footer {
     text-align: center;
