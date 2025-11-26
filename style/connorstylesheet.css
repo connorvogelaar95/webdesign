@@ -20,6 +20,16 @@
     padding-bottom: 10px;
 }
 
+/* collapse all menu items by default */
+.menu-section:not(.open) .menu-items {
+    display: none;
+}
+
+/* soups start open */
+.menu-section.open .menu-items {
+    display: flex;
+}
+
 /* Section headers */
 .item-heading {
     font-size: 22px;
