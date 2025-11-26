@@ -16,7 +16,8 @@ headings.forEach(heading => {
         // Close all other sections
         document.querySelectorAll(".menu-section").forEach(sec => {
             sec.classList.remove("open");
-            sec.querySelector(".toggle-icon").textContent = "+";
+            const secIcon = sec.querySelector(".toggle-icon");
+            if (secIcon) secIcon.textContent = "+";
         });
 
         // Open clicked section
